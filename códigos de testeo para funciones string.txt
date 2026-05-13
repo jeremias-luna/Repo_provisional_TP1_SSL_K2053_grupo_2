@@ -1,4 +1,4 @@
-códigos de testeo para funciones de strings
+códigos de testeo para funciones de strings(copien y peguen en el main)
 
 
 -Isempty: char s[10];
