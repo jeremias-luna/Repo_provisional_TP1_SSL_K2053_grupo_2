@@ -1,0 +1,202 @@
+códigos de testeo para funciones de strings
+
+
+-Isempty: char s[10];
+    char c;
+    int contador = 0;
+
+    c = getchar();
+
+    while(c != ' ' && contador < 10){
+        
+
+        s[contador] = c;
+        contador++;
+        c = getchar();
+
+
+    }
+
+    if(IsEmpty(s))
+     printf("la cadena esta vacia\n");
+    else
+     printf("la cadena no esta vacia\n");
+
+
+-GetLenght
+
+char s[10];
+    char c;
+    int contador = 0;
+
+    c = getchar();
+
+    while(c != EOF && c != '\n' && contador < 10){
+        
+
+        s[contador] = c;
+        contador++;
+        c = getchar();
+
+
+    }
+
+    s[contador] = '\0';
+
+    printf("%d longitud de la cadena: \n",GetLenght(s));   
+
+-AreEqual
+
+ char s[10];
+    char s2[10];
+    char c;
+    int contador = 0;
+
+    printf("cadena numero 1\n");
+    
+    c = getchar();
+
+    while(c != EOF && c != '\n' && contador < 10){
+        
+
+        s[contador] = c;
+        contador++;
+        c = getchar();
+
+
+    }
+   
+    s[contador] = '\0';
+
+
+    printf("cadena numero 2\n");
+
+    contador = 0;
+
+    c = getchar();
+
+    while(c != EOF && c != '\n' && contador < 10){
+        
+
+        s2[contador] = c;
+        contador++;
+        c = getchar();
+
+
+    }
+
+    s2[contador] = '\0';
+
+
+    if(AreEqual(s,s2))
+        printf("las cadenas son iguales\n");
+    else
+        printf("las cadenas son distintas\n");
+
+
+
+
+    return 0;
+
+
+-AreDecimalDigits
+
+char s[10];
+    char s2[10];
+    char c;
+    int contador = 0;
+
+    printf("cadena numero 1\n");
+    
+    c = getchar();
+
+    while(c != EOF && c != '\n' && contador < 10){
+        
+
+        s[contador] = c;
+        contador++;
+        c = getchar();
+
+
+    }
+   
+    s[contador] = '\0';
+
+
+    if(AreDecimalDigits(s))
+        printf("la cadena es de puros digitos\n");
+    else
+        printf("la cadena no es de puros digitos\n");
+
+
+
+
+    return 0;
+
+-Contains
+
+     char s[10];
+    char s2[10];
+    char c;
+    int contador = 0;
+
+    printf("cadena numero 1\n");
+    
+    c = getchar();
+
+    while(c != EOF && c != '\n' && contador < 10){
+        
+
+        s[contador] = c;
+        contador++;
+        c = getchar();
+
+
+    }
+   
+    s[contador] = '\0';
+
+    printf("caracter que debe contener\n");
+
+    char c2 = getchar();
+
+
+    if(Contains_(s,c2,0))
+        printf("la cadena contiene al caracter buscado\n");
+    else
+        printf("la cadena no contiene al caracter buscado\n");
+
+
+
+
+    return 0;
+
+
+
+-ToIntegrer
+
+char s[10];
+    char c;
+    int contador = 0;
+
+    c = getchar();
+
+    while(c != EOF && c != '\n' && contador < 10){
+        
+
+        s[contador] = c;
+        contador++;
+        c = getchar();
+
+
+    }
+
+    s[contador] = '\0';
+
+    printf("%d numero decimal: \n",ToIntegrer(s)); 
+
+    return 0;   
+
+
+
+
